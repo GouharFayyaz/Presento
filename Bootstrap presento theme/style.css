@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.nav-list ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list ul li a:hover {
+  color: red;
+}
+.logo h1 a {
+  text-decoration: none;
+  color: black;
+}
+/* .nav1 {
+  position: fixed;
+  top: 0;
+} */
+.width {
+  position: relative;
+  width: 400%;
+  border: 1px solid #000;
+}
+.put1:checked ~ .width {
+  left: 0%;
+}
+.put2:checked ~ .width {
+  left: -100%;
+}
+.put3:checked ~ .width {
+  left: -200%;
+}
+.put4:checked ~ .width {
+  left: -300%;
+}
+
+.head_shadow {
+  box-shadow: 0px 0.7px 10px 0px rgba(128, 128, 128, 0.491);
+}
+.bg_img {
+  background-image: linear-gradient(
+      rgba(13, 13, 13, 0.539),
+      rgba(19, 19, 19, 0.58)
+    ),
+    url(./images/hero-bg.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0);
+}
+.swiper {
+  width: 80%;
+  height: 300px;
+}
+.icon {
+  color: #e03a3c;
+  font-size: 32px;
+}
+
+.bgImg {
+  filter: grayscale(10);
+}
+.bgImg:hover {
+  filter: grayscale(0);
+}
+.box {
+  box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  background-color: white;
+}
+.circle {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.man input {
+  display: none;
+}
+.icon2 {
+  font-size: 45px;
+}
+.con input {
+  display: none;
+}
+.man {
+  position: absolute;
+}
+.man:hover .icon2 {
+  color: #e03a3c;
+  transition: all 0.3s;
+}
+.man:hover h6 {
+  color: #e03a3c;
+  transition: all 0.3s;
+}
+.sec5Img img {
+  height: 100%;
+  width: 100%;
+}
+.line {
+  background-color: red;
+  height: 1px;
+  width: 60px;
+}
+.port {
+  overflow: hidden;
+}
+.port img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  transition: all 0.7s;
+}
+.port img:hover {
+  transform: scale(1.3);
+}
+.bt {
+  text-decoration: none;
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 1px;
+  outline: 1px solid white;
+  transition: all ease-in-out 300ms;
+}
+.bt:hover {
+  outline: 1px solid white;
+  outline-offset: 3px;
+}
+#img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.cr {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 0.5px dotted red;
+}
+.br {
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.5);
+}
+.cr i {
+  font-size: 26px;
+}
+/* swiper slider */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* media query */
+@media screen and (min-width: 991px) {
+  .navbar ul li a {
+    font-size: 13px;
+  }
+  .navUl {
+    margin-left: 140px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .navbar ul li a {
+    font-size: 16px;
+  }
+}
